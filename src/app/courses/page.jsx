@@ -4,7 +4,7 @@ import React from 'react'
 
 export default async function Courses() {
 
-    const res = await fetch('http://localhost:5000/courses', {
+    const res = await fetch('https://lernify-app-server.vercel.app/courses', {
         cache: "no-store"
     });
     const data = await res.json();

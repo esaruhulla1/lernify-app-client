@@ -18,7 +18,7 @@ export default function DeleteButton({ id }) {
     if (!result.isConfirmed) return;
 
     // Delete Request
-    const res = await fetch(`http://localhost:5000/course/${id}`, {
+    const res = await fetch(`https://lernify-app-server.vercel.app/course/${id}`, {
       method: "DELETE",
     });
 

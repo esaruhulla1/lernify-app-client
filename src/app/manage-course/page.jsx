@@ -5,7 +5,7 @@ import DeleteButton from "./DeleteButton";
 // 🚀 Server Component
 export default async function ManageCourse() {
   // 1. Load all courses
-  const res = await fetch("http://localhost:5000/courses", {
+  const res = await fetch("https://lernify-app-server.vercel.app/courses", {
     cache: "no-store",
   });
   const courses = await res.json();

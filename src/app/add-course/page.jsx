@@ -36,7 +36,7 @@ export default function AddCoursePage() {
             createdAt: new Date(),
         };
 
-        const res = await fetch("http://localhost:5000/add-course", {
+        const res = await fetch("https://lernify-app-server.vercel.app/add-course", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newCourse),
